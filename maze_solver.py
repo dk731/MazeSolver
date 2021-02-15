@@ -83,26 +83,6 @@ def get_graph():
             if i not in visited:
                 queue.append((came_from, i, len + 1))
 
-    # def recurc(current, came_from, len):
-    #     visited.add(current)
-    #     if check_needed(current) or current == end:
-    #         graph[came_from].append((current, len))
-    #         graph[current].append((came_from, len))
-    #         came_from = current
-    #         len = 0
-    #
-    #
-    #     for i in maze[current]:
-    #         if i not in visited:
-    #             recurc(i, came_from, len + 1)
-    # visited.add(start)
-    # for i in maze[start]:
-    #     recurc(i, start, 1)
-
-    # for i in graph.items():
-    #     print(i)
-    # print(len(graph.keys()))
-
     return graph
 
 
